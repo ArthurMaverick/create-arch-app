@@ -1,0 +1,21 @@
+{
+  "name": "create-arch-app",
+  "version": "0.1.0",
+  "description": "cli architecture folders",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "bin": {
+    "create-arch": "./bin/main.js"
+  },
+  "author": "Arthur Santos <arthur@arthursantos.tech>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/node": "^16.3.1"
+  }
+}
