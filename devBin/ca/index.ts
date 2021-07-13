@@ -1,9 +1,12 @@
-import {createStructure,installDependencies,installDevDependencies,installTsconfig} from './clean-architecture'
+import {
+    createStructure,
+    installDependencies,
+    installDevDependencies
+} from './clean-architecture'
+
 
 export default () => {
-    installDevDependencies()
-        .then(()=>installTsconfig())
+    installDevDependencies()   
     installDependencies()
-        createStructure()
-   
+    createStructure()
 }
