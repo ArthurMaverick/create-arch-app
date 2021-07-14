@@ -15,8 +15,8 @@ export async function installDependencies() {
      console.log('dependencies: OK \n', stdout);
      console.log('there a problem with dependencies: \n' + stderr);
 }
-export async function createStructure() {
-    const builderPath = path.join('models', 'model', 'src')
+export async function createStructure(structure: string) {
+    const builderPath = path.join('models', structure , 'src')
     const detinationPath = path.join('.')
     const { stdout, stderr} =  await exec(`cp -R ${builderPath} ${detinationPath}`)
      console.log('stdout', stdout);
