@@ -1,5 +1,5 @@
 <div align="center">
-<iframe  src="https://embed.lottiefiles.com/animation/66392"></iframe>
+<img  src="https://media.giphy.com/media/tHf0gr52zTjdKCkiNp/giphy.gif"></img>
 </div>
 
 <div align="center">
