@@ -8,7 +8,7 @@
 
 &nbsp;
 
-[create Arch](requirements/create%20Arch.md)
+[Create Arch](requirements/create%20Arch.md)
 
 [It help me?](requirements/It%20help%20me.md)
 
@@ -22,13 +22,13 @@
 # Install
 
 ```bash
-npm install create-arch -D
+  npm install create-arch -D
 ```
 
 &nbsp;
 #### 🧿 **Create onion design (Clean Architeture)**
 ```bash
-npx create-arch ca
+  npx create-arch ca
 ```
 &nbsp;
 
