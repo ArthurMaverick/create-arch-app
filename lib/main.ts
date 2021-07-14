@@ -1,10 +1,13 @@
 #!/usr/bin/env node
 const args = process.argv.slice(2, process.argv.length);
-import {main} from './core/index'
+import {main} from './core/index';
 const action = args[0];
-   
-  main(action)
+ 
+if(action === 'ca' || action === 'mvp') {
+  main(action);
+}else {
+  console.log("digite uma estrutura ")
+}
 
 
-process.exit(0);
 

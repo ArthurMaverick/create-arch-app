@@ -5,7 +5,7 @@ import {
 } from './dependences-setup'
 
 
-export const main =  (option: string) => {
+export const main = async (option: string) => {
     installDevDependencies()   
     installDependencies()
     createStructure(isNull(option))
