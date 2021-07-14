@@ -1,6 +1,6 @@
 {
   "name": "create-arch",
-  "version": "0.2.4",
+  "version": "0.2.6",
   "description": "cli architecture folders",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,7 @@
     "typescript": "^4.3.5"
   },
   "dependencies": {
+    "create-arch": "^0.2.5",
     "express": "^4.17.1"
   }
 }

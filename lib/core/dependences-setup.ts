@@ -15,7 +15,7 @@ export async function installDependencies():Promise<void> {
      console.log('there a problem with dependencies: \n' + stderr);
 }
 export async function createStructure(structure: string): Promise<void>{
-    const builderPath = path.join('models', structure , 'src')
+    const builderPath = path.join('node_modules', 'create-arch', 'models' , structure , 'src')
     const detinationPath = path.join('.')
     const { stdout, stderr} =  await exec(`cp -R ${builderPath} ${detinationPath}`)
      console.log('stdout', stdout);

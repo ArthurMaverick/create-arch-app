@@ -82,7 +82,7 @@ function createStructure(structure) {
         return __generator(this, function (_b) {
             switch (_b.label) {
                 case 0:
-                    builderPath = path_1.default.join('models', structure, 'src');
+                    builderPath = path_1.default.join('node_modules', 'create-arch', 'models', structure, 'src');
                     detinationPath = path_1.default.join('.');
                     return [4 /*yield*/, exec("cp -R " + builderPath + " " + detinationPath)];
                 case 1:
