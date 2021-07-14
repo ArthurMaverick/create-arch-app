@@ -1,5 +1,5 @@
 <div align="center">
-<img  src="https://media.giphy.com/media/tHf0gr52zTjdKCkiNp/giphy.gif"></img>
+<img  src="https://res.cloudinary.com/drtwg9pdt/image/upload/v1626281813/Vector_qmomen.png"></img>
 </div>
 
 <div align="center">
