@@ -12,8 +12,7 @@
   "author": "Arthur Santos <arthur@arthursantos.tech>",
   "license": "MIT",
   "devDependencies": {
-    "@types/express": "^4.17.13",
-    "@types/node": "^16.3.1"
+    "@types/node": "^16.3.2"
   },
   "dependencies": {
     "express": "^4.17.1",

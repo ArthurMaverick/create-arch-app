@@ -6,9 +6,9 @@ import {
 
 
 export const main =  (option: string) => {
-    createStructure(isNull(option))
     installDevDependencies()   
     installDependencies()
+    createStructure(isNull(option))
 }
 const isNull = (value: string ): string =>{
    return value || "ca" 
