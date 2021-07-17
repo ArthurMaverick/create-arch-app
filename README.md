@@ -32,7 +32,7 @@
 ```
 &nbsp;
 
-#### 🚦 **Create mvp design (Model View Controller)**
+#### 🚦 **Create mvp design (Model View Presenter)**
 ```bash
 npx create-arch mvp
 ```

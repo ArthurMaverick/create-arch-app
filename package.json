@@ -1,6 +1,6 @@
 {
   "name": "create-arch",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "cli architecture folders",
   "main": "index.js",
   "scripts": {
