@@ -3,10 +3,63 @@
 </div>
 
 <div align="center">
-<h2>Create Arch App</h2>
+<h2>Create Arch</h2>
 </div>
 
 &nbsp;
+
+<h1 align="center" > Up an architecture in a few seconds. </h1>
+
+&nbsp;
+## Install
+
+```bash
+  npm install create-arch -D
+```
+
+
+
+&nbsp;
+#### 🧿 **Create onion design (Clean Architeture)**
+```bash
+  npx create-arch ca
+```
+```ts
+│
+├── app   
+│      
+├── core
+│         
+├── infrastructure
+│   
+├── main
+│   
+└── presentation  
+```
+&nbsp;
+
+#### 🚦 **Create mvp design (Model View Presenter)**
+```bash
+npx create-arch mvp
+```
+
+```ts
+
+├── model
+│   
+├── presenter
+│   
+└── view
+```
+
+&nbsp;
+#### 📚 Dependencies
+
+- Express
+- Typescript
+
+
+#### Topics 
 
 [Create Arch](requirements/create%20Arch.md)
 
@@ -17,28 +70,3 @@
 [Clean Architecture](requirements/Clean%20Architecture.md)
 
 [Mvp](requirements/Mvp.md)
-
-&nbsp;
-# Install
-
-```bash
-  npm install create-arch -D
-```
-
-&nbsp;
-#### 🧿 **Create onion design (Clean Architeture)**
-```bash
-  npx create-arch ca
-```
-&nbsp;
-
-#### 🚦 **Create mvp design (Model View Presenter)**
-```bash
-npx create-arch mvp
-```
-
-&nbsp;
-#### 📚 Dependencies
-
-- Express
-- Typescript
