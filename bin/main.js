@@ -8,5 +8,5 @@ if (action === 'ca' || action === 'mvp') {
     index_1.main(action);
 }
 else {
-    console.log("digite uma estrutura ");
+    console.log("invalid comand, type npx create-arch YOUR-ARCHITECTURE");
 }

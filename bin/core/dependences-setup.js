@@ -39,56 +39,41 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.createStructure = exports.installDependencies = exports.installDevDependencies = void 0;
+exports.createStructure = exports.installDevDependencies = void 0;
 var util_1 = __importDefault(require("util"));
 var child_process_1 = __importDefault(require("child_process"));
 var path_1 = __importDefault(require("path"));
 var exec = util_1.default.promisify(child_process_1.default.exec);
 function installDevDependencies() {
     return __awaiter(this, void 0, void 0, function () {
-        var _a, stdout, stderr;
-        return __generator(this, function (_b) {
-            switch (_b.label) {
-                case 0: return [4 /*yield*/, exec('npm i typescript -D && npx tsc --init')];
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, exec('npm i typescript -D && npx tsc --init && npm i express')
+                    //    stdout && console.log('dev dependencies: OK \n') 
+                    //    stderr && console.log('there a problem with dev dependencies: \n')
+                ];
                 case 1:
-                    _a = _b.sent(), stdout = _a.stdout, stderr = _a.stderr;
-                    console.log('dev dependencies: OK \n', stdout);
-                    console.log('there a problem with dev dependencies: \n' + stderr);
+                    _a.sent();
                     return [2 /*return*/];
             }
         });
     });
 }
 exports.installDevDependencies = installDevDependencies;
-function installDependencies() {
-    return __awaiter(this, void 0, void 0, function () {
-        var _a, stdout, stderr;
-        return __generator(this, function (_b) {
-            switch (_b.label) {
-                case 0: return [4 /*yield*/, exec('npm i express')];
-                case 1:
-                    _a = _b.sent(), stdout = _a.stdout, stderr = _a.stderr;
-                    console.log('dependencies: OK \n', stdout);
-                    console.log('there a problem with dependencies: \n' + stderr);
-                    return [2 /*return*/];
-            }
-        });
-    });
-}
-exports.installDependencies = installDependencies;
 function createStructure(structure) {
     return __awaiter(this, void 0, void 0, function () {
-        var builderPath, detinationPath, _a, stdout, stderr;
-        return __generator(this, function (_b) {
-            switch (_b.label) {
+        var builderPath, detinationPath;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
                 case 0:
                     builderPath = path_1.default.join('node_modules', 'create-arch', 'models', structure, 'src');
                     detinationPath = path_1.default.join('.');
-                    return [4 /*yield*/, exec("cp -R " + builderPath + " " + detinationPath)];
+                    return [4 /*yield*/, exec("cp -R " + builderPath + " " + detinationPath)
+                        // stdout && console.log('architecture created' );
+                        // stderr && console.log('architecture failed');
+                    ];
                 case 1:
-                    _a = _b.sent(), stdout = _a.stdout, stderr = _a.stderr;
-                    console.log('stdout', stdout);
-                    console.log('stderr', stderr);
+                    _a.sent();
                     return [2 /*return*/];
             }
         });

@@ -35,14 +35,23 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.main = void 0;
 var dependences_setup_1 = require("./dependences-setup");
+var cli_progress_1 = __importDefault(require("cli-progress"));
+var bar = new cli_progress_1.default.SingleBar({}, cli_progress_1.default.Presets.shades_classic);
+bar.start(100, 0);
 var main = function (option) { return __awaiter(void 0, void 0, void 0, function () {
     return __generator(this, function (_a) {
+        bar.update(0);
         dependences_setup_1.installDevDependencies();
-        dependences_setup_1.installDependencies();
+        bar.update(50);
         dependences_setup_1.createStructure(isNull(option));
+        bar.update(100);
+        bar.stop();
         return [2 /*return*/];
     });
 }); };
